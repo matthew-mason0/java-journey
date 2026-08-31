@@ -2,3 +2,17 @@
 
 vscode/bin/
 vscode/.vscode/
+
+intelliJ/out/
+intelliJ/.idea/
+
+# Build tool files?
+*.iml
+
+# Java class files
+*.class
+
+# Package files
+*.jar
+*.war
+*.ear
