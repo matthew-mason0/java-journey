@@ -1,6 +1,6 @@
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
-        Pet pet1 = new Pet();
+        Patient patient1 = new Patient("Matthew", 21, 5);
+        System.out.println("Hello " + patient1.getName());
     }
 }
