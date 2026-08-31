@@ -39,4 +39,21 @@ public class Patient {
         System.out.println("Age: " + age);
         System.out.println("Health Score: " + healthScore + "/10");
     }
+
+    public boolean isHealthy() {
+        return (healthScore >= 7);
+    }
+
+    public boolean needsAttention() {
+        return (healthScore <=3);
+    }
+
+    public void recover() {
+        if (healthScore < 10) healthScore++;
+    }
+    public void deteriorate() {
+        if (healthScore > 1) healthScore--;
+    }
+
+
 }
