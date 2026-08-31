@@ -1,0 +1,4 @@
+# My first .gitignore!
+
+vscode/bin/
+vscode/.vscode/
