@@ -32,4 +32,11 @@ public class Patient {
             System.out.println("Invalid health score (not 1-10).");
         }
     }
+
+    public void displayInfo() {
+        System.out.println("---Patient Info---");
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+        System.out.println("Health Score: " + healthScore + "/10");
+    }
 }
