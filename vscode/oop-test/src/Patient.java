@@ -27,7 +27,7 @@ public class Patient {
         return healthScore;
     }
     public void setHealthScore(int healthScore) {
-        if (1 <= healthScore && healthScore <= 10) this.healthScore = healthScore;
+        if (isValidHealth(healthScore)) this.healthScore = healthScore;
         else {
             System.out.println("Invalid health score (not 1-10).");
         }
@@ -49,11 +49,13 @@ public class Patient {
     }
 
     public void recover() {
-        if (healthScore < 10) healthScore++;
+        if (isValidHealth(healthScore + 1)) healthScore++;
     }
     public void deteriorate() {
-        if (healthScore > 1) healthScore--;
+        if (isValidHealth(healthScore - 1)) healthScore--;
     }
 
-
+    private boolean isValidHealth(int health) {
+        return (1 <= health && health <= 10);
+    }
 }
