@@ -30,9 +30,10 @@ public class Hospital {
 
     public void displayPatients() {
         System.out.println("---Patient List---");
-        int i = 0;
+        int i = 1;
         for (Patient patient : patientList) {
             System.out.println("Patient " + i + ": " + patient.getName() + ", age " + patient.getAge());
+            i++;
         }
     }
 }
