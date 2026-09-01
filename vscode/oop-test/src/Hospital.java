@@ -5,7 +5,8 @@ public class Hospital {
     private String name;
     private List<Patient> patientList;
 
-    public Hospital() {
+    public Hospital(String name) {
+        this.name = name;
         patientList = new ArrayList<>();
     }
 
