@@ -10,6 +10,7 @@ public class Doctor {
     public void examine(Patient patient) {
         System.out.println("---Examination---");
         System.out.println("Dr. " + name + " is examining " + patient.getName() + ".");
-        System.out.println(patient.getName() + "\'s health score is " + patient.getHealthScore() + "/10.\n");
+        patient.recover();
+        System.out.println(patient.getName() + "\'s health score is now " + patient.getHealthScore() + "/10.\n");
     }
 }
