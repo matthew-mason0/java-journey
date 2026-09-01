@@ -37,7 +37,7 @@ public class Patient {
         System.out.println("---Patient Info---");
         System.out.println("Name: " + name);
         System.out.println("Age: " + age);
-        System.out.println("Health Score: " + healthScore + "/10");
+        System.out.println("Health Score: " + healthScore + "/10\n");
     }
 
     public boolean isHealthy() {
