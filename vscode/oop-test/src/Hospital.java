@@ -36,4 +36,11 @@ public class Hospital {
             i++;
         }
     }
+
+    public Patient findPatient(String name) {
+        for (Patient patient : patientList) {
+            if (patient.getName().equals(name)) return patient;
+        }
+        return null;
+    }
 }
